@@ -6,7 +6,6 @@
     justify-content: center;
     display: flex;
     justify-content: space-between;
-    line-height: 1.4rem;
     &__items {
         // width:80%;
         padding:  3rem; 
@@ -16,7 +15,7 @@
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: repeat(2,1fr);
         &-item{
-            height: 10rem;
+            height: 14rem;
         }
     }
 }

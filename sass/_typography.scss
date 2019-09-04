@@ -8,16 +8,16 @@
     color: $color-primary-dark;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     border-bottom: .5px solid $color-primary-dark;
-    padding: .3rem;
+    padding: 1rem;
     width: 100%;
 }
 
 .heading-tertiary{
     text-transform: uppercase;
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     &--light{
         color: $color-font-light;
     }

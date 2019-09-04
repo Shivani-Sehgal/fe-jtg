@@ -1,25 +1,44 @@
 .nav{
     display: flex;
     align-self: strech;
-    padding:5rem;
+    
     height: 6.4rem;
     box-shadow: 0 1px 3px rgba($color-grey-dark, 0.4);
+    justify-content: space-evenly;
     &--header{
         z-index: 1;
+        padding:5rem;
+        color: $color-font-dark;
         justify-content: space-evenly;
+        font-size: 1.5rem;
+        font-weight: 500;
         background-image: linear-gradient(90deg, $color-secondary-light 0%, #ffffff 10%, #ffffff 25%, $color-secondary 70% );
     }
     &--footer{
+        display: flex;
         background-color: $color-grey-dark;
+        justify-content: space-around;
+        
+        padding-bottom: 5rem;
+        font-size: 1.2rem;
+        font-weight: 100;
     }
     &__item{
         list-style: none;
         text-transform: uppercase;
-        font-size: 1.5rem;
-        font-weight: 500;
+        color: $color-font-light;
         letter-spacing: 1px;
         align-self: center;
-        color: $color-font-dark;
+        padding: 1rem;
+        
+    }
+    &__cc{
+        list-style: none;
+        letter-spacing: 1px;
+        align-self: center;
+        padding: 1rem;
+        color: $color-font-light;
+
     }
     &__logo{
         height: 6rem;

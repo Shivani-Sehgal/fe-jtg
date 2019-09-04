@@ -4,7 +4,7 @@
     grid-template-rows: 1fr .5fr;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 6rem;
-    line-height: 1.5rem;
+    // line-height: 1.5rem;
     &__main{
         // background-color: red;
         grid-row: 1 / -1;
@@ -32,6 +32,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
     &__logos-img{
-        height: 8rem;
+        height: 14rem;
     }
 }

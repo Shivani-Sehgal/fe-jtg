@@ -174,7 +174,9 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr); }
     .media__grid-item {
-      height: 14rem; }
+      height: 12rem;
+      width: 22rem;
+      margin: 1rem; }
 
 .customers {
   display: grid;
@@ -222,3 +224,49 @@ body {
       padding: 1rem; }
       .lifestyle__content-part:not(:last-child) {
         border-right: 0.5px solid #e6e6e6; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transform: all .3s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__content {
+    width: 75%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+    transition: all .4s .2s; }
+  .popup:target .popup__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; }
+  .popup__main {
+    box-shadow: 0, 4rem 4rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin: 5rem;
+    padding: .5rem 1rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, 0); }
+  .popup__prev, .popup__next {
+    transform: translate(240%, 50%); }
+  .popup__title {
+    text-transform: uppercase;
+    color: #439153;
+    padding: .8rem 0; }
+  .popup__close {
+    position: absolute;
+    top: -3%;
+    right: -1.8%; }

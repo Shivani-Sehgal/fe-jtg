@@ -57,7 +57,7 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1%;
+  padding: 2%;
   display: inline-block;
   transition: all 0.2s;
   background-color: #fff;
@@ -189,7 +189,19 @@ body {
     .media__grid-item {
       max-height: 12rem;
       max-width: 22rem;
-      margin: 1rem; }
+      margin: 1rem;
+      box-shadow: 0 1px 8px rgba(142, 137, 135, 0.4) !important;
+      transition: all .2s; }
+      .media__grid-item:hover {
+        transform: translate(1px, -4px);
+        box-shadow: 1 4px 5px rgba(142, 137, 135, 0.7); }
+    .media__grid-vid {
+      padding: 0;
+      z-index: 1;
+      opacity: .9;
+      position: absolute;
+      max-height: 12rem;
+      max-width: 22rem; }
 
 .customers {
   display: grid;

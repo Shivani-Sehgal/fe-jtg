@@ -32,6 +32,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
     &__logos-img{
-        height: 14rem;
+        max-height: 14rem;
+        max-width: 100%;
     }
 }

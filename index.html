@@ -10,6 +10,20 @@
         <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
         
         <title>Company &mdash; company tagline</title>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-cycle@3.0.3/index.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.slideshow').cycle({
+                        fx: 'scrollLeft'
+                    });
+                });
+            </script>
     </head>
     <body class="container">
 
@@ -24,16 +38,35 @@
             
         <div class="main">
             
-            <div class="main__item slider">
-                <div class="slider__img">
-                    <img src="img/banner_slider_01.jpg" alt="banner" class="slider__banner">
+            <div class="main__item slider u-margin-bottom-md">
+                <div class="slideshow ">
+
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="img/banner_slider_01.jpg" alt="banner" class="slide__banner">
+                        </div>
+                        <div class="slide__content">
+                            <h1 class="heading-primary u-margin-bottom-md">Meta consectetus</h1>
+                            <p class="slide__text">Nulla Pariatur. Nulla Pariatur.</p>
+                            <p class="slide__text u-margin-bottom-lg"> Nulla Voluptatem Pariatur.</p>
+                            <a href="#" class="btn">learn more <span class="btn__arrow"> > </span></a>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="img/banner_slider_02.jpg" alt="banner" class="slide__banner">
+                        </div>
+                        <div class="slide__content">
+                            <h1 class="heading-primary u-margin-bottom-md">Meta consectetus</h1>
+                            <p class="slide__text">Nulla Pariatur. Nulla Pariatur.</p>
+                            <p class="slide__text u-margin-bottom-lg"> Nulla Voluptatem Pariatur.</p>
+                            <a href="#" class="btn">learn more <span class="btn__arrow"> > </span></a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="slider__content">
-                    <h1 class="heading-primary u-margin-bottom-md">Meta consectetus</h1>
-                    <p class="slider__text">Nulla Pariatur. Nulla Pariatur.</p>
-                    <p class="slider__text u-margin-bottom-lg"> Nulla Voluptatem Pariatur.</p>
-                    <a href="#" class="btn">learn more <span class="btn__arrow"> > </span></a>
-                </div>
+                
             </div>
 
             <div class="main__item lifestyle">
@@ -185,4 +218,6 @@
         
         <!-- <p class="container__item">gbgbdfbfbfbfd</p> -->
     </body>
+
+    
 </html>

@@ -1,10 +1,13 @@
-.slider{
+
+.slide{
+    width: 100% !important;
+    background-color: white;
     &__img{
         width: 100%;
     }
     display:flex;
     position: relative;
-    transform: translateY(-8px);
+    transform: translateY(-20px);
     &__banner{
         width:100%;
         border: 1px solid $color-secondary;
@@ -23,4 +26,8 @@
         font-size: 1.6rem;
     }
 }
-
+.slideshow{
+    width:100% !important;
+    margin:0;
+    background-color: white;
+}

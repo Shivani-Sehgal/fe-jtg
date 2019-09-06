@@ -27,7 +27,7 @@
         transform: translate(-50%,-50%) scale(0.3);
         opacity: 0;
         transition: all .4s .2s;
-        // padding:1rem;
+        padding: 8%;
     }
     &:target &__content{
         transform: translate(-50%,-50%) scale(1);
@@ -39,14 +39,11 @@
         margin: 5rem;
         padding: .5rem 1rem ;
         position: relative;
-        top:50%;
-        left:50%;
-        transform: translate(-65%,0)
         
     }
     &__prev,
     &__next{
-        transform: translate(240%,50%);
+        transform: translateY(50%);
     }
     &__title{
         text-transform: uppercase;
@@ -55,6 +52,7 @@
     }
     &__close{
         position: absolute;
+        // transform: translateY(100%);
         top: -3%;
         right: -1.8%;
     }

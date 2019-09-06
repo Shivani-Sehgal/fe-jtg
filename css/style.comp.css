@@ -288,7 +288,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.3);
     opacity: 0;
-    transition: all .4s .2s; }
+    transition: all .4s .2s;
+    padding: 8%; }
   .popup:target .popup__content {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1; }
@@ -297,12 +298,9 @@ body {
     background-color: white;
     margin: 5rem;
     padding: .5rem 1rem;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-65%, 0); }
+    position: relative; }
   .popup__prev, .popup__next {
-    transform: translate(240%, 50%); }
+    transform: translateY(50%); }
   .popup__title {
     text-transform: uppercase;
     color: #439153;

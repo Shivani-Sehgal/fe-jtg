@@ -1,17 +1,16 @@
 
 .slide{
     width: 100% !important;
+    display:flex;
+    position: relative;
+    transform: translateY(-20px);
     background-color: white;
     &__img{
         width: 100%;
     }
-    display:flex;
-    position: relative;
-    transform: translateY(-20px);
     &__banner{
         width:100%;
         border: 1px solid $color-secondary;
-
     }
     &__content{
         max-width: 30%;
@@ -20,6 +19,12 @@
         top: 22%;
         padding: 1rem;
         // transform: translateY(-50%);
+    }
+    &__circles{
+       position: absolute;
+       right:1%;
+       top: 97%;
+    // bottom: 0;
     }
     &__text{
         color: $color-font-dark;

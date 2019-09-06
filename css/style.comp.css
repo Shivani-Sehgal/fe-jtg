@@ -144,10 +144,10 @@ body {
 
 .slide {
   width: 100% !important;
-  background-color: white;
   display: flex;
   position: relative;
-  transform: translateY(-20px); }
+  transform: translateY(-20px);
+  background-color: white; }
   .slide__img {
     width: 100%; }
   .slide__banner {
@@ -159,6 +159,10 @@ body {
     right: 2%;
     top: 22%;
     padding: 1rem; }
+  .slide__circles {
+    position: absolute;
+    right: 1%;
+    top: 97%; }
   .slide__text {
     color: #696969;
     font-size: 1.6rem; }

@@ -1,16 +1,27 @@
 
 .slide{
+    &__mob{
+        display: none;
+        background-color: $color-primary-light;
+        padding: 2rem;
+        margin-top: 2rem;
+        @media only screen and (max-width: 1200px){
+            display: block;
+         }
+    }
     width: 100% !important;
     display:flex;
     position: relative;
     transform: translateY(-20px);
     background-color: white;
+    
     &__img{
         width: 100%;
     }
     &__banner{
         width:100%;
         border: 1px solid $color-secondary;
+       
     }
     &__content{
         max-width: 30%;
@@ -18,13 +29,11 @@
         right: 2%;
         top: 22%;
         padding: 1rem;
-        // transform: translateY(-50%);
     }
     &__circles{
        position: absolute;
        right:1%;
        top: 94%;
-    // bottom: 0;
     }
     &__text{
         color: $color-font-dark;
@@ -36,4 +45,7 @@
     width:100% !important;
     margin:0;
     background-color: white;
+    @media only screen and (max-width: 1200px){
+        display: none;
+     }
 }

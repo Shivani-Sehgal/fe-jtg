@@ -1,25 +1,33 @@
 .lifestyle{
     background-image: linear-gradient(to top, $color-secondary-light, white);
     padding: 1rem 2rem;
-    @media only screen and (max-width: 75em){
-        width:65vh;
-    }
+
     border: .5px solid $color-secondary;
     &__content{
-        
         display: flex;
         justify-content: space-evenly;
         @media only screen and (max-width: 75em){
             flex-direction: column;
-            width: 70vh;
+            // width: 70vh;
             padding-right: 5rem;
         }
         &-img{
             max-height: 15rem;
         }
         &-container{
-            display:flex;
-            
+            display: flex;
+            @media only screen and (max-width: 75em){
+                flex-direction: column;
+            }
+        }
+        &-part{
+            padding: .5rem;
+            &:not(:last-child){
+                border-right: .5px solid $color-secondary;
+                @media only screen and (max-width: 75em){
+                    border-color: transparent;
+                }
+            }
         }
         &-subpart{
             padding: 0 1rem;
@@ -29,18 +37,10 @@
             &:not(:first-child){
                 padding: 0 1rem;
             }
-        }
-
-        &-part{
-            padding: 1rem;
-            &:not(:last-child){
-                border-right: .5px solid $color-secondary;
-                @media only screen and (max-width: 75em){
-                    border-color: transparent;
-                }
+            @media only screen and (max-width: 75em){
+                border-color: transparent;
             }
         }
-        
     }
     
 }

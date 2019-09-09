@@ -28,13 +28,14 @@
             <li class="nav__item">news + events</li>
             <li class="nav__item">about us</li>
         </ul>
-            
+        
+        <div class="nav-toggle">
+            <img src="img/menu.png" alt="menu" class="nav-toggle__btn">
+        </div>
             
         <div class="main">
-            
             <div class="main__item slider u-margin-bottom-md">
                 <div class="slideshow ">
-
                     <div class="slide">
                         <div class="slide__img">
                             <img src="img/banner_slider_01.jpg" alt="banner" class="slide__banner">
@@ -48,7 +49,6 @@
                                     <img src="img/arrow.png" alt="arrow">
                                 </span>
                             </a>
-                            
                         </div>
                         <div class="slide__circles">
                                 <img src="img/button-act.png" alt="circle">
@@ -77,8 +77,17 @@
                                 <img src="img/button-act.png" alt="circle">
                                 <img src="img/button.png" alt="circle">
                             </div>
-                    </div>
-
+                        </div>
+                </div>
+                <div class="slide__mob">
+                    <h1 class="heading-primary u-margin-bottom-md">Meta consectetus</h1>
+                    <p class="slide__text">Nulla Pariatur. Nulla Pariatur.</p>
+                    <p class="slide__text u-margin-bottom-lg"> Nulla Voluptatem Pariatur.</p>
+                    <a href="#" class="btn u-margin-bottom-md">learn more 
+                        <span class="btn__arrow"> 
+                            <img src="img/arrow.png" alt="arrow">
+                        </span>
+                    </a>
                 </div>
                 
             </div>
@@ -149,7 +158,7 @@
                 </div>
             </div>
             <div class="main__item customers">
-                <div class="customers__main">
+                <div class="customers__main u-margin-bottom-md">
                         <h2 class="heading-secondary u-margin-bottom-md">our customers</h2>
                         <p class="u-margin-bottom-md">unde omnis iste natus error sit voluptatem accusantium doloremque iaudantium, 
                             totam rem aperiam eaque ipsa unde omnis iste  voluptatem accusantium doloremque iaudantium, 
@@ -423,6 +432,24 @@
             
         });
         })
+
+        var navToggleBtn = document.querySelector(".nav-toggle");
+        var nav = document.querySelector(".nav--header");
+
+        navToggleBtn.addEventListener("click", function(){
+            if(nav.style.display == "none"){
+                nav.style.display = "flex";
+            }else{
+                nav.style.display = "none";
+            }
+        })
+
+        // window.addEventListener("resize", function(){
+        //     if(navToggleBtn.style.display == "none"){
+        //         nav.style.display = "flex";
+        //     }
+        // })
+        
         </script>
     
 </html>

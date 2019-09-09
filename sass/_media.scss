@@ -1,24 +1,25 @@
 .media{
     background-image: linear-gradient(to top, $color-secondary-light, white);
-    padding: 1rem ;
+    padding: 1rem;
     border: .5px solid $color-secondary;
     padding: 2rem;
-    
     justify-content: center;
     display: flex;
     justify-content: space-between;
     @media only screen and (max-width: 75em){
         flex-direction: column;
-        width:70vh;
+        transform: translateY(10rem);
+        padding: .05rem;
     }
     &__items {
-        // width:80%;
         padding:  3rem; 
     }
     &__grid{
         display: grid;
-        grid-template-rows: repeat(2,1fr);
-        grid-template-columns: repeat(2,1fr);
+        // grid-template-rows: repeat(2,1fr);
+        // grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         &-item{
             max-height: 12rem;
             max-width: 22rem;

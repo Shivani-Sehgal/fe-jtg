@@ -49,6 +49,9 @@
         opacity: 0;
         transition: all .4s .2s;
         padding: 8%;
+        @media only screen and (max-width: 1200px){
+            padding: .1%;
+        }
         
         @media only screen and (max-width: 500px){
             width: 95%;
@@ -67,10 +70,9 @@
         padding: .5rem 1rem ;
         position: relative;
         @media only screen and (max-width: 1200px){
-            margin: 4rem;
-            padding: .2rem .6rem ;
+            margin: 2rem;
+            padding: .2rem .2rem ;
             width: 48rem;
-            transform: translateX(-8rem);
         }
         
         @media only screen and (max-width: 500px){
@@ -86,7 +88,6 @@
         transform: translateY(50%);
         @media only screen and (max-width: 1200px){
             width: 4rem;
-            transform: translate(-8rem, 50%);
         }
         
         @media only screen and (max-width: 500px){

@@ -258,9 +258,11 @@
                             <img src="img/close.png" alt="close">
                         </a>
                     <div class="popup__title">title for the image will go here</div>
-                    <div>
+                    <picture class="popup__img">
+                            <source srcset="img/full-photo-small.png"
+                            media="(max-width: 500px)">
                         <img class="popup__img" src="img/full-photo.png" alt="full-photo">
-                    </div>
+                    </picture>
                 </div>
                 <a href="#popup__photo-2"  class="popup__next">
                     <img src="img/next.png" alt="next">
@@ -278,9 +280,11 @@
                                 <img src="img/close.png" alt="close">
                             </a>
                         <div class="popup__title">title for the image will go here</div>
-                        <div>
+                        <picture class="popup__img">
+                                <source srcset="img/gal-7-small.png"
+                                media="(max-width: 500px)">
                             <img class="popup__img" src="img/gal-6.png" alt="full-photo">
-                        </div>
+                        </picture>
                     </div>
                     <a href="#popup__photo-3" class="popup__next">
                         <img src="img/next.png" alt="next">
@@ -298,9 +302,11 @@
                                     <img src="img/close.png" alt="close">
                                 </a>
                             <div class="popup__title">title for the image will go here</div>
-                            <div class="popup__img">
+                            <picture class="popup__img">
+                                    <source srcset="img/gal-7-small.png"
+                                    media="(max-width: 500px)">
                                 <img class="popup__img" src="img/gal-7.png" alt="full-photo">
-                            </div>
+                            </picture>
                         </div>
                         <a href="#popup__photo-4"  class="popup__next">
                             <img src="img/next.png" alt="next">
@@ -318,9 +324,11 @@
                                         <img src="img/close.png" alt="close">
                                     </a>
                                 <div class="popup__title">title for the image will go here</div>
-                                <div class="popup__img">
+                                <picture class="popup__img">
+                                    <source srcset="img/gal-8-small.png"
+                                    media="(max-width: 500px)">
                                     <img class="popup__img" src="img/gal-8.png" alt="full-photo">
-                                </div>
+                                </picture>
                             </div>
                             <a href="#popup__photo-1" class="popup__next">
                                 <img src="img/next.png" alt="next">
@@ -342,7 +350,7 @@
                                         </a>
                                     <div class="popup__title">title for the image will go here</div>
                                     <div class="popup__img">
-                                            <iframe class="popup__vid" width="560" height="315" src="https://www.youtube.com/embed/FEeTLopLkEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe class="popup__vid"  src="https://www.youtube.com/embed/FEeTLopLkEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                                 <a href="#popup__video-2" class="popup__next">
@@ -427,7 +435,6 @@
             $('.popup__vid').each(function(index) {
                 console.log(index);
                 $(this).attr('src', $(this).attr('src'));
-                // return false;
             });
             
         });
@@ -437,19 +444,13 @@
         var nav = document.querySelector(".nav--header");
 
         navToggleBtn.addEventListener("click", function(){
-            if(nav.style.display == "none"){
-                nav.style.display = "flex";
-            }else{
+            if(nav.style.display != "none"){
                 nav.style.display = "none";
+            }else{
+                nav.style.display = "flex";
             }
         })
 
-        // window.addEventListener("resize", function(){
-        //     if(navToggleBtn.style.display == "none"){
-        //         nav.style.display = "flex";
-        //     }
-        // })
-        
         </script>
     
 </html>

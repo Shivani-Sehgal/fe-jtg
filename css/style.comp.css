@@ -325,12 +325,12 @@ body {
         border-right: 0.9px solid #e6e6e6; }
       .lifestyle__content-subpart:not(:first-child) {
         padding: 0 1rem; }
-      @media only screen and (max-width: 75em) {
-        .lifestyle__content-subpart {
-          border-color: transparent; } }
+      @media only screen and (max-width: 1200px) {
+        .lifestyle__content-subpart:not(:last-child) {
+          border-right: .9px solid transparent; } }
 
 .popup {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -343,6 +343,21 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  @media only screen and (max-width: 1200px) {
+    .popup__img {
+      width: 46rem; } }
+  @media only screen and (max-width: 500px) {
+    .popup__img {
+      width: 23rem; } }
+  .popup__vid {
+    width: 56rem;
+    height: 31.5rem; }
+    @media only screen and (max-width: 1200px) {
+      .popup__vid {
+        width: 46rem; } }
+    @media only screen and (max-width: 500px) {
+      .popup__vid {
+        width: 24rem; } }
   .popup__content {
     width: 75%;
     display: flex;
@@ -353,6 +368,10 @@ body {
     opacity: 0;
     transition: all .4s .2s;
     padding: 8%; }
+    @media only screen and (max-width: 500px) {
+      .popup__content {
+        width: 95%;
+        padding: .1%; } }
   .popup:target .popup__content {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1; }
@@ -362,8 +381,27 @@ body {
     margin: 5rem;
     padding: .5rem 1rem;
     position: relative; }
+    @media only screen and (max-width: 1200px) {
+      .popup__main {
+        margin: 4rem;
+        padding: .2rem .6rem;
+        width: 48rem;
+        transform: translateX(-8rem); } }
+    @media only screen and (max-width: 500px) {
+      .popup__main {
+        margin: 2rem;
+        padding: .1rem .4rem;
+        transform: translateX(1rem);
+        width: 24rem; } }
   .popup__prev, .popup__next {
     transform: translateY(50%); }
+    @media only screen and (max-width: 1200px) {
+      .popup__prev, .popup__next {
+        width: 4rem;
+        transform: translate(-8rem, 50%); } }
+    @media only screen and (max-width: 500px) {
+      .popup__prev, .popup__next {
+        width: 1rem; } }
   .popup__title {
     text-transform: uppercase;
     color: #439153;
@@ -372,3 +410,6 @@ body {
     position: absolute;
     top: -3%;
     right: -1.8%; }
+    @media only screen and (max-width: 500px) {
+      .popup__close {
+        top: -6%; } }

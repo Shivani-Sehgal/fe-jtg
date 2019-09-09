@@ -37,8 +37,10 @@
             &:not(:first-child){
                 padding: 0 1rem;
             }
-            @media only screen and (max-width: 75em){
-                border-color: transparent;
+            @media only screen and (max-width: 1200px){
+                &:not(:last-child){
+                    border-right: .9px solid transparent;
+                }
             }
         }
     }

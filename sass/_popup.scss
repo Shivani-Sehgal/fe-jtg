@@ -1,5 +1,5 @@
 .popup{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: fixed;
     top:0;
@@ -13,10 +13,31 @@
         opacity: 1;
         visibility: visible;
     }
-    // &__img{
-    //     height: 186px;
-    //     width: 111px
-    // }
+    @media only screen and (max-width: 1200px){
+        &__img{
+            // height: 250px;
+            
+            width: 46rem;
+        }  
+    }
+    @media only screen and (max-width: 500px){
+        &__img{
+            // height: 250px;
+            width: 23rem;
+        }   
+    }
+    
+    &__vid{
+        width: 56rem;
+        height: 31.5rem;
+        @media only screen and (max-width: 1200px){
+            width: 46rem;
+        }
+        @media only screen and (max-width: 500px){
+            width: 24rem;
+        }
+
+    }
    
     &__content{
         width: 75%;
@@ -28,6 +49,12 @@
         opacity: 0;
         transition: all .4s .2s;
         padding: 8%;
+        
+        @media only screen and (max-width: 500px){
+            width: 95%;
+            padding: .1%;
+        }
+      
     }
     &:target &__content{
         transform: translate(-50%,-50%) scale(1);
@@ -39,11 +66,33 @@
         margin: 5rem;
         padding: .5rem 1rem ;
         position: relative;
+        @media only screen and (max-width: 1200px){
+            margin: 4rem;
+            padding: .2rem .6rem ;
+            width: 48rem;
+            transform: translateX(-8rem);
+        }
         
+        @media only screen and (max-width: 500px){
+            margin: 2rem;
+            padding: .1rem .4rem ;
+            transform: translateX(1rem);
+            width: 24rem;
+        }
+       
     }
     &__prev,
     &__next{
         transform: translateY(50%);
+        @media only screen and (max-width: 1200px){
+            width: 4rem;
+            transform: translate(-8rem, 50%);
+        }
+        
+        @media only screen and (max-width: 500px){
+            width: 1rem;
+        }
+        
     }
     &__title{
         text-transform: uppercase;
@@ -55,6 +104,9 @@
         // transform: translateY(100%);
         top: -3%;
         right: -1.8%;
+        @media only screen and (max-width: 500px){
+            top: -6%;
+        }
     }
 }
 
